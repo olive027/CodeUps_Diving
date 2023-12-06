@@ -1,0 +1,57 @@
+@use 'global' as *;
+
+.button {
+	display: inline-block;
+	width: rem(202);
+	padding: rem(16) rem(40) rem(16) 0;
+	text-align: center;
+	background-color: $green1;
+	border: 1px solid $green1;
+	color: $white;
+	font-size: rem(14);
+	line-height: calc(22 / 14);
+	font-weight: $regular;
+	font-family: $english-font-family;
+	transition: color .5s, background-color .5s;
+	position: relative;
+}
+
+.button::first-letter {
+	text-transform: capitalize;
+}
+
+.button::after {
+	display: inline-block;
+	content: "";
+	width: rem(40);
+	height: rem(6);
+	background: url(../images/common/button-arrow-white.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+	right: rem(40);
+	transition: background-image .5s;
+}
+
+.button::before {
+	display: inline-block;
+	content:"";
+	width: rem(202);
+	height: rem(54);
+	background-color: $white;
+	border: 1px solid $green1;
+	position: absolute;
+	top: rem(4);
+	left: rem(4);
+	z-index: -1;
+}
+
+.button:hover {
+	background-color: $white;
+	color: $green1;
+}
+
+.button:hover::after {
+	background-image: url(../images/common/button-arrow-green.png);
+}

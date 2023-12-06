@@ -1,0 +1,53 @@
+@use 'global' as *;
+
+.footer-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.footer-nav__left,
+.footer-nav__right {
+	width: calc(50% - rem(5));
+	@include mq(md){
+		width: calc(50% - rem(36));
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: rem(242);
+	}
+}
+
+.footer-nav__left-items,
+.footer-nav__right-items {
+	margin-top: rem(16);
+}
+
+.footer-nav__left-item a,
+.footer-nav__right-item a {
+	display: block;
+	color: $white;
+	padding: rem(12) 0 rem(12) rem(22);
+	cursor: pointer;
+	line-height: calc(18 / 16);
+	font-weight: $regular;
+}
+
+.footer-nav__left-item:first-child a,
+.footer-nav__right-item:first-child a {
+	font-weight: $bold;
+	position: relative;
+}
+
+.footer-nav__left-item:first-child a::before,
+.footer-nav__right-item:first-child a::before {
+	display: inline-block;
+	content: "";
+	width: rem(18);
+	height: rem(18);
+	background: url(../images/common/hitode.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: rem(12);
+	left: rem(2);
+}
