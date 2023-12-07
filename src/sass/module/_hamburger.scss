@@ -4,7 +4,7 @@
 	width: rem(32);
 	height: rem(24);
 	position: relative;
-	z-index: 9999;
+	z-index: 9998;
 	cursor: pointer;
 	@include mq(md){
 		display: none;

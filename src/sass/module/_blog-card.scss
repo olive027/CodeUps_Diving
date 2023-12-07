@@ -3,6 +3,7 @@
 .blog-card {
 	box-shadow: rem(2) rem(2) rem(10) rgba(0,0,0,0.25);
 	padding: rem(16) rem(16) rem(24);
+	background: $white;
 }
 
 .blog-card__img img {
@@ -17,7 +18,7 @@
 }
 
 .blog-card__meta {
-	border-bottom: 1px solid $black1;
+	border-bottom: 1px solid $green1;
 	padding-bottom: rem(4);
 }
 

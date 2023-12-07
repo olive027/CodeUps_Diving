@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.blog {
+	position: relative;
+	@include mq(md){
+		padding-top: rem(100);
+	}
+}
+
+.blog__bg {
+	@include mq(md){
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 60.1684%;
+		z-index: -1;
+	}
+}
+
+.blog__bg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 1440 / 500;
+}
+
+.blog__cards {
+	margin-top: rem(24);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(rem(333), 1fr));
+	grid-row-gap: rem(40);
+	@include mq(md){
+		margin-top: rem(80);
+		grid-column-gap: rem(40);
+	}
+}
+
+.blog__link {
+	text-align: center;
+	margin-top: rem(40);
+	@include mq(md){
+		margin-top: rem(80);
+	}
+}

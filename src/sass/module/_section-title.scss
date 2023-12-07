@@ -29,3 +29,21 @@
 		margin-top: rem(8);
 	}
 }
+
+.section-title.section-title--white {
+	@include mq(md){
+		color: $white;
+	}
+}
+
+.section-title.section-title--white::first-letter {
+	@include mq(md){
+		color: $green2;
+	}
+}
+
+.section-title__sub.section-title__sub--white {
+	@include mq(md){
+		color: $white;
+	}
+}
