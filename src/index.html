@@ -34,6 +34,8 @@
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
 <!-- swiper -->
 <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- inview -->
+<script defer src="./assets/js/jquery.inview.min.js"></script>
 <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -348,7 +350,7 @@
             <h2 class="section-title">information<span class="section-title__sub">ダイビング情報</span></h2>
           </div>
           <div class="information__content">
-            <div class="information__img">
+            <div class="information__img colorbox js-colorbox">
               <img src="./assets/images/common/information-img.jpg" alt="黄色い魚が海中を泳ぐ画像">
             </div>
             <div class="information__body">
@@ -446,7 +448,7 @@
                     ここにタイトルが入ります。ここにタイトル
                   </div>
                 </div>
-                <div class="voice-card__img">
+                <div class="voice-card__img colorbox js-colorbox">
                   <img src="./assets/images/common/voice-img01.jpg" alt="麦わら帽子をかぶった女性の正面写真">
                 </div>
               </div>
@@ -465,7 +467,7 @@
                     ここにタイトルが入ります。ここにタイトル
                   </div>
                 </div>
-                <div class="voice-card__img">
+                <div class="voice-card__img colorbox js-colorbox">
                   <img src="./assets/images/common/voice-img02.jpg" alt="ガッツポーズの女性の正面写真">
                 </div>
               </div>
@@ -476,6 +478,107 @@
           </div>
           <div class="voice__link">
             <a href="" class="voice__linkbtn button"><span>view&nbsp;more</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="price top-price">
+        <div class="price__inner inner">
+          <div class="price__section-title">
+            <h2 class="section-title">price<span class="section-title__sub">料金一覧</span></h2>
+          </div>
+          <div class="price__content">
+            <div class="price__img">
+              <picture class="colorbox js-colorbox">
+                <source srcset="./assets/images/common/price-sp-img.jpg" media="(max-width: 768px)" type="image/png" alt=”ウミガメが海中を泳ぐ画像”>
+                <img src="./assets/images/common/price-img.jpg" alt=”たくさんの赤い魚がサンゴ礁を泳ぐ画像”>
+              </picture>
+            </div>
+            <div class="price__body">
+              <ul class="price__list-wrap">
+                <li class="price__list">
+                  <h3 class="price__list-title">ライセンス講習</h3>
+                  <dl class="price__list-item">
+                    <dt>オープンウォーターダイバーコース</dt>
+                    <dd>¥50,000</dd>
+                    <dt>アドバンスドオープンウォーターコース</dt>
+                    <dd>¥60,000</dd>
+                    <dt>レスキュー＋EFRコース</dt>
+                    <dd>¥70,000</dd>
+                  </dl>
+                </li>
+                <li class="price__list">
+                  <h3 class="price__list-title">体験ダイビング</h3>
+                  <dl class="price__list-item">
+                    <dt>ビーチ体験ダイビング(半日)</dt>
+                    <dd>¥7,000</dd>
+                    <dt>ビーチ体験ダイビング(1日)</dt>
+                    <dd>¥14,000</dd>
+                    <dt>ボート体験ダイビング(半日)</dt>
+                    <dd>¥10,000</dd>
+                    <dt>ボート体験ダイビング(1日)</dt>
+                    <dd>¥18,000</dd>
+                  </dl>
+                </li>
+                <li class="price__list">
+                  <h3 class="price__list-title">ファンダイビング</h3>
+                  <dl class="price__list-item">
+                    <dt>ビーチダイビング(2ダイブ)</dt>
+                    <dd>¥14,000</dd>
+                    <dt>ボートダイビング(2ダイブ)</dt>
+                    <dd>¥18,000</dd>
+                    <dt>スペシャルダイビング(2ダイブ)</dt>
+                    <dd>¥24,000</dd>
+                    <dt>ナイトダイビング(1ダイブ)</dt>
+                    <dd>¥10,000</dd>
+                  </dl>
+                </li>
+                <li class="price__list">
+                  <h3 class="price__list-title">スペシャルダイビング</h3>
+                  <dl class="price__list-item">
+                    <dt>貸切ダイビング(2ダイブ)</dt>
+                    <dd>¥24,000</dd>
+                    <dt>1日ダイビング(3ダイブ)</dt>
+                    <dd>¥32,000</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="price__link">
+            <a href="" class="price__linkbtn button"><span>view&nbsp;more</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__inner inner">
+          <div class="contact__content">
+            <div class="contact__left">
+              <div class="contact__logo">
+                <img src="./assets/images/common/CodeUps-logo-green.png" alt="CodeUps-logo">
+              </div>
+              <div class="contact__info">
+                <div class="contact__info-text">
+                  <p>沖縄県那覇市1-1</p>
+                  <p><a href="tel:0120-000-0000">TEL:0120-000-0000</a></p>
+                  <p>営業時間:8:30-19:00</p>
+                  <p>定休日:毎週火曜日</p>
+                </div>
+                <div class="contact__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.992191220852!2d127.68598738705435!3d26.22944326791472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bd0b4a42ff1%3A0x36812e0e598f7d6b!2z44CSOTAwLTAwMDUg5rKW57iE55yM6YKj6KaH5biC5aSp5LmF77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1702032611149!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="contact__right">
+              <div class="contact__section-title">
+                <h2 class="section-title section-title--contact">contact
+                  <span class="section-title__sub section-title__sub--contact">お問合せ</span>
+                </h2>
+              </div>
+              <p class="contact__text">ご予約・お問い合わせはコチラ</p>
+              <div class="contact__link">
+                <a href="" class="contact__linkbtn button"><span>contact&nbsp;us</span></a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -47,3 +47,12 @@
 		color: $white;
 	}
 }
+
+.section-title.section-title--contact {
+	font-size: rem(80);
+	line-height: 1;
+}
+
+.section-title__sub.section-title__sub--contact {
+	margin-top: rem(-5);
+}
