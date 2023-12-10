@@ -116,5 +116,50 @@ box.each(function(){
      });
 });
 
+// ========================== ページトップボタン============================
+$(function () {
+  const pageTop = $(".pagetop");
+  pageTop.hide(); // 最初はボタンを非表示にする
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) { // 100pxスクロールしたら表示
+      pageTop.fadeIn();
+    } else {
+      pageTop.fadeOut();
+    }
+  });
+
+	// フッター手前でストップ
+  $(window).on("scroll", function () {
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    var footHeight = $("footer").innerHeight();
+
+    if (scrollHeight - scrollPosition <= footHeight) {
+ // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+      pageTop.css({
+        position: "absolute",
+        bottom: footHeight,
+      });
+    } else {
+      pageTop.css({
+        position: "fixed",
+        bottom: "0",
+      });
+    }
+  });
+
+	pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0, // 上から0pxの位置に戻る
+      },
+      500 // 500ミリ秒かけて戻る
+    );
+    return false;
+  });
+});
+
+
+
 
 });

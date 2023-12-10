@@ -7,6 +7,20 @@
 	}
 }
 
+.blog::before {
+	@include mq(md){
+		display: inline-block;
+		content: '';
+		width: rem(437);
+		height: rem(201);
+		background: url(../images/common/fish-white.png) no-repeat;
+		background-size: contain;
+		position: absolute;
+		top: rem(24);
+		left: calc(50% - min(50vw, rem(620)));
+	}
+}
+
 .blog__bg {
 	@include mq(md){
 		position: absolute;

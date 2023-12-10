@@ -7,9 +7,24 @@
 .price__inner {
 	padding-top: rem(80);
 	padding-bottom: rem(80);
+	position: relative;
 	@include mq(md){
 		padding-top: rem(100);
 		padding-bottom: rem(100);
+	}
+}
+
+.price__inner::after {
+	@include mq(md){
+		display: inline-block;
+		content: '';
+		width: rem(437);
+		height: rem(201);
+		background: url(../images/common/fish01.png) no-repeat;
+		background-size: contain;
+		position: absolute;
+		bottom: rem(60);
+		left: calc(50% - min(50vw, rem(620)));
 	}
 }
 
@@ -36,7 +51,7 @@
 	object-fit: cover;
 	aspect-ratio: 345 / 227;
 	@include mq(md){
-		aspect-ratio: 746 / 1077;
+		aspect-ratio: 492 / 746;
 	}
 }
 
@@ -61,7 +76,7 @@
 .price__list-item {
 	border-top: 1px solid $green1;
 	font-size: rem(14);
-	line-height: calc(24 / 14);
+	line-height: 1.5;
 	margin-top: rem(4);
 	font-weight: $regular;
 	display: flex;
