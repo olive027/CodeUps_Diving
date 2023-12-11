@@ -4,6 +4,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	gap: rem(18);
+	white-space: nowrap;
 }
 
 .footer-nav__left,

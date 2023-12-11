@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .voice__inner {
-	padding-bottom: rem(80);
+	padding-bottom: rem(84);
 	position: relative;
 	@include mq(md){
 		padding-bottom: rem(140);
@@ -24,19 +24,21 @@
 }
 
 .voice__inner::after {
-	display: inline-block;
-	content: '';
-	width: rem(71);
-	height: rem(162);
-	background: url(../images/common/tatsunootoshigo.png) no-repeat;
-	background-size: contain;
-	position: absolute;
-	bottom: rem(73);
-	right: calc(50% - min(50vw, rem(540)));
+	@include mq(md){
+		display: inline-block;
+		content: '';
+		width: rem(71);
+		height: rem(162);
+		background: url(../images/common/tatsunootoshigo.png) no-repeat;
+		background-size: contain;
+		position: absolute;
+		bottom: rem(73);
+		right: calc(50% - min(50vw, rem(540)));
+	}
 }
 
 .voice__cards {
-	margin-top: rem(40);
+	margin-top: rem(43);
 	@include mq(md){
 		margin-top: rem(30);
 		display: flex;
@@ -54,7 +56,7 @@
 
 .voice__link {
 	text-align: center;
-	margin-top: rem(40);
+	margin-top: rem(39);
 	@include mq(md){
 		margin-top: rem(80);
 	}

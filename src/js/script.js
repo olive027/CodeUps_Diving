@@ -72,7 +72,7 @@ var swiper = new Swiper(".js-campaign-swiper", {
 		disableOnInteraction: false,
 	},
 	speed: 2000,
-	slidesPerView: 1.5, // 一度に表示する枚数
+	slidesPerView: 1.26, // 一度に表示する枚数
   spaceBetween: 24, // スライド間の距離
 	freeMode: true,
   freeModeSticky: true,
@@ -138,12 +138,12 @@ $(function () {
  // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
       pageTop.css({
         position: "absolute",
-        bottom: footHeight,
+        bottom: footHeight + 14,
       });
     } else {
       pageTop.css({
         position: "fixed",
-        bottom: "0",
+        bottom: "14px",
       });
     }
   });

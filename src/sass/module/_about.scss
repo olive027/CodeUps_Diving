@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .about__inner {
-	padding-bottom: rem(70);
+	padding-bottom: rem(73);
 	position: relative;
 	@include mq(md){
 		padding-bottom: rem(90);
@@ -23,7 +23,7 @@
 }
 
 .about__img-wrap {
-	margin-top: rem(24);
+	margin-top: rem(27);
 	@include mq(md){
 		margin-top: rem(40);
 	}
@@ -103,7 +103,7 @@
 
 .about__text {
 	font-weight: $regular;
-	line-height: calc(24 / 16);
+	line-height: 1.51;
 	@include mq(md){
 		color: $white;
 		line-height: 1.8;

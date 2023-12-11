@@ -3,13 +3,13 @@
 .button {
 	display: inline-block;
 	width: rem(202);
-	padding: rem(16) rem(40) rem(16) 0;
+	padding: rem(16) rem(88) rem(16) rem(37);
 	text-align: center;
 	background-color: $green1;
 	border: 1px solid $green1;
 	color: $white;
 	font-size: rem(14);
-	line-height: calc(22 / 14);
+	line-height: 1.4;
 	font-weight: $regular;
 	font-family: $english-font-family;
 	transition: color .3s, background-color .3s;
@@ -44,7 +44,7 @@
 	position: absolute;
 	top: 45%;
 	transform: translateY(-50%);
-	right: rem(40);
+	right: rem(36);
 	transition: background-image .3s;
 }
 
@@ -56,8 +56,8 @@
 	background-color: transparent;
 	border: 1px solid $green1;
 	position: absolute;
-	top: rem(4);
-	left: rem(4);
+	top: rem(3);
+	left: rem(2);
 	z-index: -2;
 }
 

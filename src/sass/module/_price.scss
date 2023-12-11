@@ -6,7 +6,7 @@
 
 .price__inner {
 	padding-top: rem(80);
-	padding-bottom: rem(80);
+	padding-bottom: rem(84);
 	position: relative;
 	@include mq(md){
 		padding-top: rem(100);
@@ -29,7 +29,7 @@
 }
 
 .price__content {
-	margin-top: rem(24);
+	margin-top: rem(27);
 	@include mq(md){
 		margin-top: rem(40);
 		display: flex;
@@ -69,15 +69,15 @@
 
 .price__list-title {
 	font-size: rem(16);
-	line-height: calc(24 / 16);
+	line-height: 1.54;
 	font-weight: $bold;
 }
 
 .price__list-item {
 	border-top: 1px solid $green1;
 	font-size: rem(14);
-	line-height: 1.5;
-	margin-top: rem(4);
+	line-height: 1.7142857;
+	margin-top: rem(3);
 	font-weight: $regular;
 	display: flex;
 	justify-content: space-between;
