@@ -8,7 +8,7 @@
 	// border-radius: 50%;
 	z-index: 100;
 	@include mq(md){
-		right: rem(20);
+		right: rem(17);
 		bottom: rem(20);
 	}
 }
@@ -21,8 +21,8 @@
 	height: rem(48);
 	transition: opacity .5s;
 	@include mq(md){
-		width: rem(80);
-		height: rem(80);
+		width: rem(87);
+		height: rem(87);
 	}
 }
 
@@ -30,8 +30,8 @@
 	width: rem(48);
 	height: rem(48);
 	@include mq(md){
-		width: rem(80);
-		height: rem(80);
+		width: rem(88);
+		height: rem(88);
 	}
 }
 

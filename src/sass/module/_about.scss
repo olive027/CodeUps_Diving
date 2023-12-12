@@ -25,7 +25,7 @@
 .about__img-wrap {
 	margin-top: rem(27);
 	@include mq(md){
-		margin-top: rem(40);
+		margin-top: rem(38);
 	}
 }
 
@@ -72,8 +72,8 @@
 		display: flex;
 		align-items: flex-start;
 		position: absolute;
-		top: 42%;
-		left: 18.4259%;
+		top: 36%;
+		left: 19.8%;
 		z-index: 3;
 	}
 }
@@ -96,8 +96,7 @@
 	margin-top: rem(16);
 	@include mq(md){
 		margin-top: 0;
-		margin-left: rem(38);
-		width: 50%;
+		width: 46%;
 	}
 }
 
@@ -106,7 +105,6 @@
 	line-height: 1.51;
 	@include mq(md){
 		color: $white;
-		line-height: 1.8;
 	}
 }
 

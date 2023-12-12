@@ -9,7 +9,7 @@
 	padding-bottom: rem(84);
 	position: relative;
 	@include mq(md){
-		padding-top: rem(100);
+		padding-top: rem(96);
 		padding-bottom: rem(100);
 	}
 }
@@ -65,6 +65,9 @@
 
 .price__list:nth-child(n+2) {
 	margin-top: rem(40);
+	@include mq(md){
+		margin-top: rem(38);
+	}
 }
 
 .price__list-title {
@@ -91,6 +94,7 @@
 	padding-top: rem(8);
 	width: 73%;
 	@include mq(md){
+		padding-top: rem(5);
 		width: 60%;
 	}
 }
@@ -100,6 +104,7 @@
 	width: 27%;
 	text-align: right;
 	@include mq(md){
+		padding-top: rem(5);
 		width: 40%;
 	}
 }
@@ -108,6 +113,6 @@
 	text-align: center;
 	margin-top: rem(40);
 	@include mq(md){
-		margin-top: rem(80);
+		margin-top: rem(78);
 	}
 }

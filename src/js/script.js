@@ -78,8 +78,8 @@ var swiper = new Swiper(".js-campaign-swiper", {
   freeModeSticky: true,
 	breakpoints: {
 		768: {
-			slidesPerView: 3.5,
-			spaceBetween: 40
+			slidesPerView: 3.48,
+			spaceBetween: 40.2
 		}
 	},
 	// 前後の矢印

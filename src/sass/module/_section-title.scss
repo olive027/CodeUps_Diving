@@ -25,9 +25,6 @@
 	line-height: calc(18 / 12);
 	color: $green1;
 	margin-top: rem(4);
-	@include mq(md){
-		margin-top: rem(8);
-	}
 }
 
 .section-title--white {
@@ -48,11 +45,11 @@
 	}
 }
 
-.section-title--contact {
+.section-title.section-title--contact {
 	font-size: rem(80);
 	line-height: 1;
 }
 
-.section-title__sub--contact {
+.section-title__sub.section-title__sub--contact {
 	margin-top: rem(-5);
 }

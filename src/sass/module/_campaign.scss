@@ -9,7 +9,7 @@
 	padding-bottom: rem(10);
 	margin-top: rem(27);
 	@include mq(md){
-		margin-top: rem(48);
+		margin-top: rem(39);
 	}
 }
 
@@ -29,7 +29,7 @@
 	width: rem(80);
 	height: rem(80);
 	position: absolute;
-	top: rem(22);
+	top: rem(6);
 	transition: opacity .5s;
 	cursor: pointer;
 }
@@ -57,11 +57,11 @@
 }
 
 .campaign-button-prev {
-	left: 78%;
+	left: 76.5%;
 }
 
 .campaign-button-next {
-	right: 0%;
+	right: 2.2%;
 }
 
 .campaign-button-prev:hover,
@@ -73,6 +73,6 @@
 	margin-top: rem(31);
 	text-align: center;
 	@include mq(md){
-		margin-top: rem(80);
+		margin-top: rem(70);
 	}
 }

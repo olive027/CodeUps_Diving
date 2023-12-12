@@ -47,7 +47,7 @@
 	border: 1px solid $green1;
 	padding: rem(4) rem(11);
 	@include mq(md){
-		padding: rem(6) rem(16);
+		padding: rem(6) rem(15);
 	}
 }
 
@@ -67,6 +67,7 @@
 	padding-top: rem(9);
 	flex-shrink: 0;
 	@include mq(md){
+		width: 38%;
 		margin-left: rem(16);
 		padding-top: 0;
 	}

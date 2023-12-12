@@ -3,7 +3,7 @@
 .blog {
 	position: relative;
 	@include mq(md){
-		padding-top: rem(100);
+		padding-top: rem(95);
 	}
 }
 
@@ -27,7 +27,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 60.1684%;
+		height: 60.5%;
 		z-index: -1;
 	}
 }
@@ -40,13 +40,14 @@
 }
 
 .blog__cards {
-	margin: rem(28) rem(5) 0;
+	margin: rem(28) 0 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(rem(333), 1fr));
-	grid-row-gap: rem(40);
+	grid-template-columns: repeat(3, 1fr);
+	// grid-template-columns: repeat(auto-fit, minmax(rem(333), 1fr));
+	row-gap: rem(40);
 	@include mq(md){
 		margin-top: rem(80);
-		grid-column-gap: rem(40);
+		column-gap: rem(40);
 	}
 }
 
