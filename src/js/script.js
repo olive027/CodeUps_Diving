@@ -15,6 +15,9 @@ $('.js-hamburger').click(function(){
 // 	target.innerHTML = target.textContent.replace(/\S/g,'<span>$&</span>')
 // });
 
+// ローディングが始まる前にbodyにoverflow: hiddenを追加してスクロールを無効化
+document.body.style.overflow = 'hidden';
+
 var tl = gsap.timeline();
 tl.fromTo('.js-img-left', {
 	y: "120%",
@@ -37,61 +40,66 @@ tl.fromTo('.js-img-left', {
 	y: 0,
 	duration: 1.2,
 },"+=1")
-.to('.loading',{
+.to('.js-loading',{
 	display: "none",
-  duration:2.5,
-  ease: "power2.out",
+  duration: 1,
 },"+=0.5")
 .to('.js-container', {
 	display: "block",
-	autoAlpha: 1,
+  opacity: 1,
+  visibility: "visible",
+	// autoAlpha: 1,
   duration:2.5,
   ease: "power2.out",
 },"<");
 
 tl.eventCallback('onComplete', function () {
+  document.body.style.overflow = '';
   initSwiper();
+  nextSwiper();
 });
 
 //===============================mv swiper================================
 // swiper
 function initSwiper(){
-var swiper = new Swiper(".js-mv-swiper", {
-	loop: true,
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	effect: 'fade',
-	speed: 2500,
-	allowTouchMove: false,
-});
+  var swiper = new Swiper(".js-mv-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    speed: 2500,
+    allowTouchMove: false,
+  });
 };
 
 //====================== campaign swiper===============================
-var swiper = new Swiper(".js-campaign-swiper", {
-	loop: true,
-	autoplay: {
-		delay: 1000,
-		disableOnInteraction: false,
-	},
-	speed: 2000,
-	slidesPerView: 1.26, // 一度に表示する枚数
-  spaceBetween: 24, // スライド間の距離
-	freeMode: true,
-  freeModeSticky: true,
-	breakpoints: {
-		768: {
-			slidesPerView: 3.48,
-			spaceBetween: 40.2
-		}
-	},
-	// 前後の矢印
-  navigation: {
-    nextEl: ".js-campaign-btn-next",
-    prevEl: ".js-campaign-btn-prev",
-  },
-});
+function nextSwiper(){
+  var swiper = new Swiper(".js-campaign-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    slidesPerView: 1.26, // 一度に表示する枚数
+    spaceBetween: 24, // スライド間の距離
+    freeMode: true,
+    freeModeSticky: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 3.48,
+        spaceBetween: 40.2
+      }
+    },
+    // 前後の矢印
+    navigation: {
+      nextEl: ".js-campaign-btn-next",
+      prevEl: ".js-campaign-btn-prev",
+    },
+  })
+};
 
 // ==================== 画像の出現アニメーション ===========================
 //要素の取得とスピードの設定
