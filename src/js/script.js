@@ -1,5 +1,5 @@
 
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+jQuery(function ($) {
 
 //============================ hamburger================================
 $('.js-hamburger').click(function(){
@@ -37,13 +37,17 @@ tl.fromTo('.js-img-left', {
 	y: 0,
 	duration: 1.2,
 },"+=1")
-.to('.loading', 1.5,{
+.to('.loading',{
 	display: "none",
+  duration:2.5,
+  ease: "power2.out",
 },"+=0.5")
-.to('.js-container', 2,{
+.to('.js-container', {
 	display: "block",
 	autoAlpha: 1,
-},"<0.5");
+  duration:2.5,
+  ease: "power2.out",
+},"<");
 
 tl.eventCallback('onComplete', function () {
   initSwiper();

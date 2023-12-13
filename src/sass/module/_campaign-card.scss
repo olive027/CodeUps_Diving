@@ -103,7 +103,7 @@
 	font-weight: $bold;
 	font-family: $english2-font-family;
 	color: $green1;
-	margin-left: rem(17);
+	margin-left: rem(18);
 	@include mq(md){
 		font-size: rem(40);
 		margin-left: clamp(0.3rem, 1.8vw, 1.69rem);

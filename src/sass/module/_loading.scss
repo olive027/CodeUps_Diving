@@ -1,10 +1,10 @@
 @use "global" as *;
 
-// .js-container {
-// 	display: none;
-// 	opacity: 0;
-// 	visibility: hidden;
-// }
+.js-container {
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+}
 
 .loading {
 	width: 100%;
@@ -68,7 +68,7 @@
 
 .loading__img-left img,
 .loading__img-right img {
-	width: auto;
+	width: 100%;
 	height: 100%;
 }
 

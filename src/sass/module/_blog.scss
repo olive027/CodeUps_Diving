@@ -40,13 +40,14 @@
 }
 
 .blog__cards {
-	margin: rem(28) 0 0;
+	margin: rem(28) rem(5) 0;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	// grid-template-columns: repeat(auto-fit, minmax(rem(333), 1fr));
 	row-gap: rem(40);
 	@include mq(md){
-		margin-top: rem(80);
+		grid-template-columns: repeat(3, 1fr);
+		margin: rem(80) 0 0;
 		column-gap: rem(40);
 	}
 }
