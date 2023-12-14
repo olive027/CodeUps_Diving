@@ -11,16 +11,11 @@
 	height: 100vh;
 	height: 100dvh;
 	background: transparent;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
 	position: relative;
-	// z-index: 9999;
 }
 
 .loading__title-wrap {
 	color: $green1;
-	// z-index: 9999;
 }
 
 .loading__title-wrap--white {
@@ -30,7 +25,6 @@
 
 .loading__title-wrap,
 .loading__title-wrap--white {
-	// width: 100%;
 	text-align: center;
 	position: absolute;
 	top: 50%;
