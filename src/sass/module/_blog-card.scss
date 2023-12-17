@@ -6,6 +6,7 @@
 }
 
 .blog-card__link {
+	display: inline-block;
 	padding: rem(16) rem(16) rem(23);
 	@include mq(md){
 		padding: rem(16) rem(16) rem(24);
