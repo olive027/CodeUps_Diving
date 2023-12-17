@@ -83,15 +83,16 @@ function nextSwiper(){
       disableOnInteraction: false,
     },
     speed: 2000,
-    slidesPerView: 1.26, // 一度に表示する枚数
+    // slidesPerView: 1.26, // 一度に表示する枚数
+    loopAdditionalSlides: 4,
+    width: 280,
     spaceBetween: 24, // スライド間の距離
     freeMode: true,
     freeModeSticky: true,
     breakpoints: {
       768: {
-        slidesPerView: 3.48,
-        spaceBetween: 40.2
-      }
+        width: 333,
+      },
     },
     // 前後の矢印
     navigation: {

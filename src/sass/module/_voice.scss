@@ -3,6 +3,7 @@
 .voice__inner {
 	padding-bottom: rem(84);
 	position: relative;
+	max-width: rem(600);
 	@include mq(md){
 		padding-bottom: rem(143);
 	}

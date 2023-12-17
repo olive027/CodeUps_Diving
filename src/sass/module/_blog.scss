@@ -7,6 +7,13 @@
 	}
 }
 
+.blog__inner {
+	max-width: rem(600);
+	@include mq(md){
+		max-width: rem(1920);
+	}
+}
+
 .blog::before {
 	@include mq(md){
 		display: inline-block;

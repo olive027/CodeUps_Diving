@@ -8,6 +8,7 @@
 	padding-top: rem(80);
 	padding-bottom: rem(84);
 	position: relative;
+	max-width: rem(600);
 	@include mq(md){
 		padding-top: rem(96);
 		padding-bottom: rem(100);

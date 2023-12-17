@@ -35,6 +35,11 @@
 	font-weight: $regular;
 }
 
+.footer-nav__left-item a:hover,
+.footer-nav__right-item a:hover {
+	opacity: .6;
+}
+
 .footer-nav__left-item:first-child a,
 .footer-nav__right-item:first-child a {
 	font-weight: $bold;
