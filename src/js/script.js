@@ -1,7 +1,7 @@
 
 jQuery(function ($) {
 
-//============================ hamburger================================
+//==========================hamburger================================
 $('.js-hamburger').click(function(){
 	$('.js-hamburger').toggleClass('is-active');
 	$('.js-sp-nav').fadeToggle(600);
@@ -59,7 +59,7 @@ tl.eventCallback('onComplete', function () {
   nextSwiper();
 });
 
-//===============================mv swiper================================
+//====================mv swiper================================
 // swiper
 function initSwiper(){
   var swiper = new Swiper(".js-mv-swiper", {
@@ -74,7 +74,7 @@ function initSwiper(){
   });
 };
 
-//====================== campaign swiper===============================
+//============== campaign swiper===============================
 function nextSwiper(){
   var swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
