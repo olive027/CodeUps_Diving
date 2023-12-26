@@ -1,16 +1,10 @@
 @use "global" as *;
 
-.contact__inner {
-	padding-top: rem(80);
-	padding-bottom: rem(104);
+.contact {
 	position: relative;
-	@include mq(md){
-		padding-top: rem(143);
-		padding-bottom: rem(160);
-	}
 }
 
-.contact__inner::after {
+.contact::after {
 	display: inline-block;
 	content: '';
 	width: rem(111);
@@ -18,12 +12,12 @@
 	background: url(../images/common/fish01.png) no-repeat;
 	background-size: contain;
 	position: absolute;
-	top: rem(55);
+	top: rem(-25);
 	right: calc(50% - min(46.6vw, rem(670)));
 	@include mq(md){
 		width: rem(301);
 		height: rem(138);
-		top: rem(104);
+		top: rem(-40);
 	}
 }
 

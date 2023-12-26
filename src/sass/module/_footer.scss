@@ -2,12 +2,22 @@
 
 .footer {
 	background: $green1;
+	margin-top: rem(104);
+	padding-top: rem(48);
+	padding-bottom: rem(56);
+	@include mq(md){
+		margin-top: rem(160);
+		padding-top: rem(80);
+		padding-bottom: rem(53);
+	}
 }
 
 .footer__inner {
-	padding: rem(48) rem(15) rem(56);
+	padding-left: rem(15);
+	padding-right: rem(15);
 	@include mq(md){
-		padding: rem(80) 0 rem(53);
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 

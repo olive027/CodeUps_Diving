@@ -2,20 +2,14 @@
 
 .price {
 	background: $green2;
+	position: relative;
 }
 
 .price__inner {
-	padding-top: rem(80);
-	padding-bottom: rem(84);
-	position: relative;
 	max-width: rem(600);
-	@include mq(md){
-		padding-top: rem(96);
-		padding-bottom: rem(100);
-	}
 }
 
-.price__inner::after {
+.price::after {
 	@include mq(md){
 		display: inline-block;
 		content: '';

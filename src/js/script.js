@@ -22,15 +22,15 @@ var tl = gsap.timeline();
 tl.fromTo('.js-img-left', {
 	y: "120%",
 },{
-	delay: 2,
+	delay: 0.8,
 	y: 0,
-	duration: 2,
+	duration: 1.3,
 })
 .fromTo('.js-img-right', {
 	y: "120%",
 },{
 	y: 0,
-	duration: 2,
+	duration: 1.3,
 },"<10.4166%")
 .fromTo('.loading__title-wrap--white',{
 	autoAlpha: 0,
@@ -39,7 +39,7 @@ tl.fromTo('.js-img-left', {
 	autoAlpha: 1,
 	y: 0,
 	duration: 1.2,
-},"+=1")
+},"+=0.5")
 .to('.js-loading',{
 	display: "none",
   duration: 1,
@@ -49,7 +49,7 @@ tl.fromTo('.js-img-left', {
   opacity: 1,
   visibility: "visible",
 	// autoAlpha: 1,
-  duration:2.5,
+  duration:2,
   ease: "power2.out",
 },"<");
 

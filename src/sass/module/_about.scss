@@ -1,10 +1,10 @@
 @use "global" as *;
 
 .about__inner {
-	padding-bottom: rem(73);
+	// padding-bottom: rem(73);
 	position: relative;
 	@include mq(md){
-		padding-bottom: rem(90);
+		// padding-bottom: rem(90);
 	}
 }
 
@@ -17,8 +17,8 @@
 		background: url(../images/common/sango.png) no-repeat;
 		background-size: contain;
 		position: absolute;
-		bottom: 0;
-		right: calc(50% - min(50vw, rem(637)));
+		bottom: rem(-90);
+		right: calc(50% - min(48vw, rem(637)));
 	}
 }
 
@@ -72,7 +72,7 @@
 		display: flex;
 		align-items: flex-start;
 		position: absolute;
-		top: 36%;
+		top: 40%;
 		left: 19.8%;
 		z-index: 3;
 	}

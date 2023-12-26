@@ -1,17 +1,19 @@
 @use "global" as *;
 
 .information {
-	background-color: $green2;
-	z-index: -2;
-}
-
-.information__inner {
 	padding-top: rem(82);
 	padding-bottom: rem(84);
-	max-width: rem(600);
+	background-color: $green2;
+	z-index: -2;
 	@include mq(md){
 		padding-top: rem(95);
 		padding-bottom: rem(75);
+	}
+}
+
+.information__inner {
+	max-width: rem(600);
+	@include mq(md){
 		max-width: rem(1920);
 	}
 }

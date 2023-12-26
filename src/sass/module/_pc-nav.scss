@@ -16,15 +16,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: rem(40.2);
 	color: $white;
 }
 
 .pc-nav__item {
 	height: inherit;
-}
-
-.pc-nav__item:not(:first-child) {
-	margin-left: rem(40.2);
 }
 
 .pc-nav__item a {
