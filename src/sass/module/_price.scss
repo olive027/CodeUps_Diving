@@ -86,20 +86,20 @@
 }
 
 .price__list-item dt {
-	padding-top: rem(8);
+	margin-top: rem(8);
 	width: 73%;
 	@include mq(md){
-		padding-top: rem(5);
+		margin-top: rem(5);
 		width: 60%;
 	}
 }
 
 .price__list-item dd {
-	padding-top: rem(8);
+	margin-top: rem(8);
 	width: 27%;
 	text-align: right;
 	@include mq(md){
-		padding-top: rem(5);
+		margin-top: rem(5);
 		width: 40%;
 	}
 }

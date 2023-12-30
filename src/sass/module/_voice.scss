@@ -1,12 +1,15 @@
 @use "global" as *;
 
+.voice {
+	position: relative;
+}
+
 .voice__inner {
 	// padding-bottom: rem(84);
-	position: relative;
 	max-width: rem(600);
 }
 
-.voice__inner::before {
+.voice::before {
 	@include mq(md){
 		display: inline-block;
 		content: '';
@@ -21,7 +24,7 @@
 	}
 }
 
-.voice__inner::after {
+.voice::after {
 	@include mq(md){
 		display: inline-block;
 		content: '';
@@ -41,8 +44,7 @@
 		margin-top: rem(30);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		column-gap: rem(40);
-		row-gap: rem(40);
+		gap: rem(40);
 	}
 }
 

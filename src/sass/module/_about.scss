@@ -1,14 +1,10 @@
 @use "global" as *;
 
-.about__inner {
-	// padding-bottom: rem(73);
+.about {
 	position: relative;
-	@include mq(md){
-		// padding-bottom: rem(90);
-	}
 }
 
-.about__inner::after {
+.about::after {
 	@include mq(md){
 		display: inline-block;
 		content: '';

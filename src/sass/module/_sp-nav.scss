@@ -1,21 +1,22 @@
 @use 'global' as *;
 
 .sp-nav {
-	width: 100%;
+	background: $green1;
 	height: 100vh;
 	height: 100dvh;
+	width: 100%;
+	padding-top: rem(77);
 	position: fixed;
 	top: 0;
 	right: 0;
-	background: $green1;
 	z-index: 5000;
-	overflow-y: scroll;
 }
 
 .sp-nav__inner {
-	height: inherit;
+	height: 100%;
 	display: flex;
-	padding: rem(77) rem(15) rem(83);
+	padding: 0 rem(15) rem(83);
+	overflow-y: scroll;
 }
 
 .sp-nav__left-items,
