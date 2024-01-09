@@ -32,7 +32,7 @@ tl.fromTo('.js-img-left', {
 	y: 0,
 	duration: 1.2,
 },"<10.4166%")
-.fromTo('.loading__title-wrap--white',{
+.fromTo('.js-mv-title',{
 	autoAlpha: 0,
 	y: 50,
 },{

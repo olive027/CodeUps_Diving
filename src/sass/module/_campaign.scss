@@ -23,8 +23,8 @@
 }
 
 /* 前へ次への矢印カスタマイズ */
-.campaign-button-prev,
-.campaign-button-next {
+.campaign__button-prev,
+.campaign__button-next {
 	width: rem(80);
 	height: rem(80);
 	position: absolute;
@@ -33,8 +33,8 @@
 	cursor: pointer;
 }
 
-.campaign-button-prev::after,
-.campaign-button-next::after {
+.campaign__button-prev::after,
+.campaign__button-next::after {
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -47,24 +47,24 @@
 	}
 }
 /* 前への矢印カスタマイズ */
-.campaign-button-prev::after {
+.campaign__button-prev::after {
 	background-image: url(../images/common/arrow-prev.png);
 }
 /* 次への矢印カスタマイズ */
-.campaign-button-next::after {
+.campaign__button-next::after {
 	background-image: url(../images/common/arrow-next.png);
 }
 
-.campaign-button-prev {
+.campaign__button-prev {
 	left: 76.5%;
 }
 
-.campaign-button-next {
+.campaign__button-next {
 	right: 2.2%;
 }
 
-.campaign-button-prev:hover,
-.campaign-button-next:hover {
+.campaign__button-prev:hover,
+.campaign__button-next:hover {
 	opacity: .7;
 }
 

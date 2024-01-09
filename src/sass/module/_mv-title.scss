@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.mv-title {
+	color: $white;
+}
+
+.mv-title__main {
+	font-size: rem(40);
+	letter-spacing: 0.53em;
+	text-indent: 0.54em;
+	line-height: 1.2;
+	font-weight: $regular;
+	font-family: $english2-font-family;
+	text-transform: uppercase;
+	@include mq(md){
+		font-size: rem(80);
+		line-height: calc(100 / 80);
+	}
+}
+
+.mv-title__sub {
+	font-size: rem(20);
+	font-family: $english-font-family;
+	font-weight: $regular;
+}
+
+.mv-title--green {
+	color: $green1;
+}

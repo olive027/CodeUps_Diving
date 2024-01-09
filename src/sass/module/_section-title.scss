@@ -1,19 +1,23 @@
 @use "global" as *;
 
 .section-title {
+	text-align: center;
+}
+
+.section-title__main {
 	font-size: rem(32);
 	font-weight: $regular;
 	font-family: $english-font-family;
 	line-height: calc(40 / 32);
-	text-align: center;
+	text-transform: capitalize;
+	display: inline-block;
 	@include mq(md){
 		font-size: rem(40);
 	}
 }
 
-.section-title::first-letter {
+.section-title__main::first-letter {
 	color: $green1;
-	text-transform: capitalize;
 }
 
 .section-title__sub {
@@ -27,25 +31,20 @@
 	margin-top: rem(4);
 }
 
-.section-title--white {
-	@include mq(md){
-		color: $white;
-	}
-}
-
-.section-title--white::first-letter {
-	@include mq(md){
-		color: $green2;
-	}
-}
-
+.section-title__main--white,
 .section-title__sub--white {
 	@include mq(md){
 		color: $white;
 	}
 }
 
-.section-title.section-title--contact {
+.section-title__main--white::first-letter {
+	@include mq(md){
+		color: $green2;
+	}
+}
+
+.section-title__main.section-title__main--contact {
 	font-size: rem(80);
 	line-height: 1;
 }

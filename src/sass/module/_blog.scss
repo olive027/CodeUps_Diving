@@ -48,12 +48,7 @@
 
 .blog__cards {
 	margin: rem(28) rem(5) 0;
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	// grid-template-columns: repeat(auto-fit, minmax(rem(333), 1fr));
-	gap: rem(40);
 	@include mq(md){
-		grid-template-columns: repeat(3, 1fr);
 		margin: rem(80) 0 0;
 	}
 }
