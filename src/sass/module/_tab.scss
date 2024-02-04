@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.tab {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: rem(21);
+	row-gap: rem(16);
+	@include mq(md){
+		column-gap: rem(32);
+	}
+}
+
+.tab__item {
+	font-size: rem(14);
+	line-height: calc(22 / 14);
+	font-weight: $normal;
+	text-transform: uppercase;
+	color: $green1;
+	text-align: center;
+	width: rem(162);
+	padding: rem(6) 0;
+	border: 1px solid $green1;
+}
+
+.tab__item.current {
+	background: $green1;
+	color: $white;
+}

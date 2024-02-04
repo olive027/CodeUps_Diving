@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.side-blog-card {
+	box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+}
+
+.side-blog-card:nth-child(n+2) {
+	margin-top: rem(24);
+}
+
+.side-blog-card__link {
+	display: flex;
+	gap: rem(16);
+	padding: rem(16);
+	transition: opacity .4s;
+}
+
+.side-blog-card__link:hover {
+	opacity: .7;
+}
+
+.side-blog-card__link:hover .side-blog-card__img img {
+	transform: scale(1.1);
+}
+
+.side-blog-card__img {
+	width: 46.1832%;
+	aspect-ratio: 121 / 90;
+	overflow: hidden;
+}
+
+.side-blog-card__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform .4s;
+}
+
+.side-blog-card__date {
+	font-size: rem(12);
+	line-height: calc(18 / 12);
+	font-weight: $normal;
+	font-family: $english-font-family;
+}
+
+.side-blog-card__title {
+	font-size: rem(16);
+	font-weight: 500;
+	margin-top: rem(4);
+}

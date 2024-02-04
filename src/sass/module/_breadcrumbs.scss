@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.breadcrumbs__items {
+	display: flex;
+}
+
+.breadcrumbs__item {
+	font-size: rem(14);
+	font-weight: $normal;
+	text-transform: uppercase;
+}
+
+.breadcrumbs__item:nth-child(n+2) {
+	margin-left: rem(20);
+	position: relative;
+}
+
+.breadcrumbs__item:nth-child(n+2)::before {
+	display: inline-block;
+	content: '';
+	width: rem(5);
+	height: rem(9);
+	background: url(../images/common/breadcrumbs-arrow.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 35%;
+	left: rem(-12);
+}
