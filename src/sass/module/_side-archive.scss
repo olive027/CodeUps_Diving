@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.side-archive__item {
+	color: $green1;
+}
+
+.side-archive__item:nth-child(n+2) {
+	margin-top: rem(4);
+}
+
+.side-archive__header {
+	font-size: rem(24);
+	font-weight: $normal;
+	margin-left: rem(32);
+	position: relative;
+	cursor: pointer;
+	transition: opacity .6s;
+}
+
+.side-archive__link {
+	font-size: rem(24);
+	font-weight: $normal;
+	margin-left: rem(56);
+	margin-top: rem(4);
+	position: relative;
+	cursor: pointer;
+	transition: opacity .6s;
+}
+
+.side-archive__header::before,
+.side-archive__link::before {
+	display: inline-block;
+	content: '';
+	width: rem(19);
+	height: rem(19);
+	background: url(../images/common/archive-arrow.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: rem(10);
+	left: rem(-24);
+	// transform: translateY(-50%);
+}
+
+.side-archive__header:hover,
+.side-archive__link:hover {
+	opacity: .6;
+}
+
+.is-open.side-archive__header::before {
+	transform: rotate(90deg);
+}
+
+.side-archive__body {
+	display: none;
+}

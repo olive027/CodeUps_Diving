@@ -172,7 +172,13 @@ $(function () {
   });
 });
 
-
+// ========================== サイドバーアコーディオン============================
+$(".js-archive-item:first-child .js-archive-body").css("display", "block");
+$(".js-archive-item:first-child .js-archive-header").addClass("is-open");
+$(".js-archive-header").click(function(){
+  $(this).next().slideToggle();
+  $(this).toggleClass("is-open");
+})
 
 
 });
