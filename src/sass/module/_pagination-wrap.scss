@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.pagination-wrap {
+	display: flex;
+	justify-content: center;
+	gap: rem(40);
+}
+
+.pagination-wrap__items {
+	display: flex;
+	justify-content: center;
+	gap: rem(12);
+}
+
+.pagination-wrap__item {
+	width: rem(38);
+	height: rem(38);
+	border: 1px solid $green1;
+	color: $green1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination-wrap__item.current {
+	color: #fff;
+	background: $green1;
+}
+
+.pagination-wrap__prev,
+.pagination-wrap__next {
+	width: rem(38);
+	height: rem(38);
+	border: 1px solid $green1;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.pagination-wrap__prev::before,
+.pagination-wrap__next::before {
+	content: "";
+	width: rem(10);
+	height: rem(10);
+	border-top: 1px solid $green1;
+	border-left: 1px solid $green1;
+	position: absolute;
+}
+
+.pagination-wrap__prev::before {
+	transform: rotate(-45deg);
+	left: 42%;
+}
+
+.pagination-wrap__next::before {
+	transform: rotate(135deg);
+	left: 31%;
+}

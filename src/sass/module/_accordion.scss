@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.accordion__item:nth-child(n+2) {
+	margin-top: rem(40);
+}
+
+.accordion__title {
+	font-size: rem(16);
+	font-weight: 400;
+	background: $green1;
+	color: #fff;
+	padding: rem(16);
+	position: relative;
+	transition: opacity .6s;
+	cursor: pointer;
+	@include mq(md){
+		padding: rem(25) rem(40);
+		font-size: rem(20);
+	}
+}
+
+.accordion__title::before,
+.accordion__title::after {
+	content: "";
+	width: rem(28);
+	height: rem(1);
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	right: rem(16);
+	transform: translateY(-50%);
+	@include mq(md){
+		right: rem(40);
+	}
+}
+
+.accordion__title::before {
+	transition: opacity .4s;
+}
+
+.accordion__title::after {
+	transform: rotate(90deg);
+	transition: transform .4s;
+}
+
+.accordion__title:hover {
+	opacity: .8;
+}
+
+.accordion__title.is-open::before {
+	opacity: 0;
+}
+
+.accordion__title.is-open::after {
+	transform: rotate(180deg);
+}
+
+.accordion__content {
+	border: 1px solid $green1;
+	padding: rem(24) rem(16);
+	display: none;
+	@include mq(md){
+		margin-top: rem(16);
+		padding: rem(40);
+	}
+}
