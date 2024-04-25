@@ -60,6 +60,12 @@
 	flex-grow: 1;
 }
 
+.campaign-card.campaign-card--page .campaign-card__title {
+	@include mq(md){
+		font-size: rem(24);
+	}
+}
+
 .campaign-card.campaign-card--side .campaign-card__title {
 	margin-top: 0;
 	text-align: center;
@@ -111,6 +117,12 @@
 .campaign-card.campaign-card--side .campaign-card__price {
 	@include mq(md){
 		gap: rem(16);
+	}
+}
+
+.campaign-card.campaign-card--page .campaign-card__price {
+	@include mq(md){
+		gap: rem(40);
 	}
 }
 

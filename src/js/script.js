@@ -197,4 +197,20 @@ $(".js-accordion__title").click(function(){
 	$(".js-accordion__title").not(this).next().slideUp(300); //クリックしたとこ以外で開いてたとこを閉じる
 });
 
+// ========================== モーダル============================
+$('.js-modal-open').click(function(){
+  var imgSrc = $(this).children().attr('src');
+  $('.js-modal-img').children().attr('src', imgSrc);
+  $('.js-modal').fadeIn();
+  $('body,html').css('overflow-y', 'hidden');
+  return false
+});
+
+$('.js-modal-close').click(function(){
+  $('.js-modal').fadeOut();
+  $('body,html').css('overflow-y', 'visible');
+  return false
+});
+
+
 });

@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	gap: rem(40);
+	margin-top: rem(80);
 }
 
 .pagination-wrap__items {
@@ -20,6 +21,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .pagination-wrap__item.current {
@@ -35,6 +37,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	cursor: pointer;
 }
 
 .pagination-wrap__prev::before,

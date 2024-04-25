@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.card-detail {
+	margin-top: rem(24);
+}
+
+.card-detail__text {
+	line-height: calc(24 / 16);
+	font-weight: 400;
+}
+
+.card-detail__period {
+	color: $green1;
+	line-height: calc(18 /16);
+	font-weight: 700;
+	text-align: center;
+	font-family: $english2-font-family;
+	margin-top: rem(32);
+}
+
+.card-detail__contact-text {
+	color: $green1;
+	font-size: rem(14);
+	line-height: calc(18 / 14);
+	font-weight: 400;
+	text-align: center;
+	margin-top: rem(7);
+}
+
+.card-detail__btn {
+	text-align: center;
+	margin-top: rem(16);
+}

@@ -26,6 +26,13 @@
 	}
 }
 
+.about__body.fish-icon::before {
+	top: rem(-22);
+	@include mq(md){
+		top: rem(-67);
+	}
+}
+
 .about__img-small {
 	width: 37.1014%;
 	position: relative;
@@ -48,6 +55,16 @@
 	margin-top: -48.6956%;
 	@include mq(md){
 		margin-top: -48.7037%;
+	}
+}
+
+.about__img-big.about__img-big--page {
+	margin-top: 0;
+	width: 100%;
+	@include mq(md){
+		width: 81.4492%;
+		margin-left: auto;
+		margin-top: -48.6956%;
 	}
 }
 
@@ -83,6 +100,16 @@
 		font-size: rem(80);
 		line-height: calc(100 / 80);
 		color: $white;
+	}
+}
+
+.about__title.about__title--page {
+	position: absolute;
+  top: 23px;
+  left: 23px;
+  color: #fff;
+	@include mq(md){
+		position: static;
 	}
 }
 
