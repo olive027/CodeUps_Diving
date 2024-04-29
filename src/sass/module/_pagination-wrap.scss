@@ -4,7 +4,10 @@
 	display: flex;
 	justify-content: center;
 	gap: rem(40);
-	margin-top: rem(80);
+}
+
+.pagination-wrap.pagination-wrap--single {
+	gap: rem(82);
 }
 
 .pagination-wrap__items {
@@ -38,6 +41,7 @@
 	align-items: center;
 	position: relative;
 	cursor: pointer;
+	transition: background .4s;
 }
 
 .pagination-wrap__prev::before,
@@ -48,6 +52,7 @@
 	border-top: 1px solid $green1;
 	border-left: 1px solid $green1;
 	position: absolute;
+	transition: border-color .4s;
 }
 
 .pagination-wrap__prev::before {
@@ -58,4 +63,14 @@
 .pagination-wrap__next::before {
 	transform: rotate(135deg);
 	left: 31%;
+}
+
+.pagination-wrap__prev:hover,
+.pagination-wrap__next:hover {
+	background: $green1;
+}
+
+.pagination-wrap__prev:hover::before,
+.pagination-wrap__next:hover::before {
+	border-color: $white;
 }

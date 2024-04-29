@@ -1,7 +1,7 @@
 
 jQuery(function ($) {
 
-//==========================hamburger================================
+//======================hamburger=========================
 $('.js-hamburger').click(function(){
 	$('.js-hamburger').toggleClass('is-active');
 	$('.js-sp-nav').fadeToggle(600);
@@ -16,7 +16,7 @@ $('.js-hamburger').click(function(){
 // });
 
 // ローディングが始まる前にbodyにoverflow: hiddenを追加してスクロールを無効化
-document.body.style.overflow = 'hidden';
+// document.body.style.overflow = 'hidden';
 
 var tl = gsap.timeline();
 tl.fromTo('.js-img-left', {
@@ -54,12 +54,12 @@ tl.fromTo('.js-img-left', {
 },"<");
 
 tl.eventCallback('onComplete', function () {
-  document.body.style.overflow = '';
+  // document.body.style.overflow = '';
   initSwiper();
   nextSwiper();
 });
 
-//====================mv swiper================================
+//====================mv swiper=========----===========
 // swiper
 function initSwiper(){
   var swiper = new Swiper(".js-mv-swiper", {
@@ -74,7 +74,7 @@ function initSwiper(){
   });
 };
 
-//============== campaign swiper===============================
+//============== campaign swiper======================
 function nextSwiper(){
   var swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
@@ -102,7 +102,7 @@ function nextSwiper(){
   })
 };
 
-// ==================== 画像の出現アニメーション ===========================
+// ======== 画像の出現アニメーション ==----===============
 //要素の取得とスピードの設定
 var box = $('.js-colorbox'),
     speed = 700;
@@ -129,7 +129,7 @@ box.each(function(){
      });
 });
 
-// ========================== ページトップボタン============================
+// ============== ページトップボタン=====================
 $(function () {
   const pageTop = $(".pagetop");
   pageTop.hide(); // 最初はボタンを非表示にする
@@ -172,7 +172,7 @@ $(function () {
   });
 });
 
-// ========================== サイドバーアコーディオン============================
+// ========= サイドバーアコーディオン ==================
 $(".js-archive-item:first-child .js-archive-body").css("display", "block");
 $(".js-archive-item:first-child .js-archive-header").addClass("is-open");
 $(".js-archive-header").click(function(){
@@ -181,7 +181,7 @@ $(".js-archive-header").click(function(){
 })
 
 
-// ========================== FAQアコーディオン============================
+// =========== FAQアコーディオン==--===================
 //一番最初のQを開いた状態にしておく（必要なければ削除）
 $(".js-accordion__item:first-child .js-accordion__content").css(
 	"display",
@@ -197,7 +197,7 @@ $(".js-accordion__title").click(function(){
 	$(".js-accordion__title").not(this).next().slideUp(300); //クリックしたとこ以外で開いてたとこを閉じる
 });
 
-// ========================== モーダル============================
+//=================== about モーダル======================
 $('.js-modal-open').click(function(){
   var imgSrc = $(this).children().attr('src');
   $('.js-modal-img').children().attr('src', imgSrc);
@@ -212,5 +212,18 @@ $('.js-modal-close').click(function(){
   return false
 });
 
+// =============== information タブ======================
+// 最初のコンテンツを表示
+$(".js-information-content:first-of-type").css("display", "block");
+$(".js-information-tab").click(function(){
+	// 現在選択されているタブからis-activeを外す
+	$(".current").removeClass('current');
+	// クリックされたタブにis-activeクラスを付与
+	$(this).addClass('current');
+	// クリックされた要素が何番目か取得
+	const Index = $(this).index();
+	// クリックしたタブのインデックス番号と同じコンテンツを表示
+	$(".js-information-content").hide().eq(Index).fadeIn(600);
+});
 
 });

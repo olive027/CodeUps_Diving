@@ -61,6 +61,7 @@
 }
 
 .campaign-card.campaign-card--page .campaign-card__title {
+	flex-grow: 0;
 	@include mq(md){
 		font-size: rem(24);
 	}
@@ -181,6 +182,44 @@
 .campaign-card.campaign-card--side .campaign-card__price-after {
 	@include mq(md){
 		font-size: rem(32);
+	}
+}
+
+.campaign-card__detail-text {
+	@include mq(md){
+		margin-top: rem(24);
+		line-height: calc(24 / 16);
+		font-weight: 400;
+		flex-grow: 1;
+	}
+}
+
+.campaign-card__period {
+	@include mq(md){
+		color: $green1;
+		line-height: calc(18 /16);
+		font-weight: 700;
+		text-align: center;
+		font-family: $english2-font-family;
+		margin-top: rem(32);
+	}
+}
+
+.campaign-card__contact-text {
+	@include mq(md){
+		color: $green1;
+		font-size: rem(14);
+		line-height: calc(18 / 14);
+		font-weight: 400;
+		text-align: center;
+		margin-top: rem(7);
+	}
+}
+
+.campaign-card__btn {
+	@include mq(md){
+		text-align: center;
+		margin-top: rem(16);
 	}
 }
 
