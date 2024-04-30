@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.price-body__content {
+	max-width: rem(700);
+	margin-inline: auto;
+}
+
+.price-body__content.fish-icon::before {
+	top: rem(-24);
+	@include mq(md){
+		left: calc(50% - min(49vw, 38.2625rem));
+    top: rem(-68);
+	}
+}
+
+.price-body__list {
+	@include mq(md){
+		display: flex;
+		align-items: center;
+	}
+}
+
+.price-body__list:nth-child(n+2) {
+	margin-top: rem(40);
+	@include mq(md){
+		margin-top: rem(80);
+	}
+}

@@ -1,0 +1,79 @@
+@use "global" as *;
+
+.price-list__item {
+	font-size: rem(16);
+	line-height: calc(24 / 16);
+	font-weight: $normal;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-top: 1px solid $green1;
+	border-left: 1px solid $green1;
+}
+
+.price-list__item dt {
+	width: 69.36%;
+	border-right: 1px solid $green1;
+	padding: rem(7) 0;
+	text-align: center;
+	@include mq(md){
+		width: 67.73%;
+		padding: rem(18) 0;
+	}
+}
+
+.price-list__item dt,
+.price-list__item dd {
+	border-bottom: 1px solid $green1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.price-list__item dd {
+	width: 30.63%;
+	border-right: 1px solid $green1;
+	padding: rem(7) rem(16) rem(7) 0;
+	text-align: right;
+	@include mq(md){
+		width: 32.27%;
+		padding: rem(18) rem(16) rem(18) 0;
+	}
+}
+
+.price-list__title {
+	background: $green1;
+	color: $white;
+	font-size: rem(16);
+	font-weight: $bold;
+	line-height: 1.5;
+	padding: rem(8) 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: rem(8);
+	@include mq(md){
+		width: 28.57%;
+		padding: 0;
+		flex-direction: column-reverse;
+		align-self: stretch;
+	}
+}
+
+.price-list__title::before {
+	content: "";
+	width: rem(24);
+	height: rem(24);
+	background: url(../images/common/whale-white.png) no-repeat;
+	background-size: contain;
+	@include mq(md){
+		width: rem(64);
+		height: rem(64);
+	}
+}
+
+.price-list__item {
+	@include mq(md){
+		width: 71.42%;
+	}
+}
