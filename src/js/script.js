@@ -226,4 +226,23 @@ $(".js-information-tab").click(function(){
 	$(".js-information-content").hide().eq(Index).fadeIn(600);
 });
 
+// =============== フォームバリデーション======================
+  $('.form__btn').click(function(){
+    let hasError = false;
+
+    $("input[required], textarea[required]").each(function () {
+      let value = $(this).val();
+      if (value == "" || !value.match(/[^\s\t]/)) {
+        hasError = true;
+        $(this).addClass("is-error");
+        $(".form__error").css('display','flex');
+      } else {
+        $(this).removeClass("is-error");
+      }
+    });
+  });
+
+
+
+
 });

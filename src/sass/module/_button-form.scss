@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.button-form.button {
+	cursor: pointer;
+}
+
+.button-form.button input {
+	color: $white;
+	text-transform: capitalize;
+	transition: color .3s;
+}
+
+.button-form.button span::after {
+	top: 40%;
+	right: rem(47);
+	width: rem(50);
+	height: rem(8);
+}
+
+.button-form.button:hover input {
+	color: $green1;
+}

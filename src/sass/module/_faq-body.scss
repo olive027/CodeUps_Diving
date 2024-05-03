@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.faq-body__accordion.fish-icon::before {
+	top: rem(-24);
+	@include mq(md){
+		left: calc(50% - min(49vw, 38.2625rem));
+    top: rem(-68);
+	}
+}
