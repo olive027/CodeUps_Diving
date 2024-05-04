@@ -1,0 +1,66 @@
+@use 'global' as *;
+
+.sitemap-body-nav.fish-icon::before {
+	top: rem(4.8);
+	@include mq(md){
+		content: none;
+	}
+}
+
+.sitemap-body-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: rem(18);
+	white-space: nowrap;
+}
+
+.sitemap-body-nav__left,
+.sitemap-body-nav__right {
+	width: calc(50% - rem(5));
+	@include mq(md){
+		width: calc(50% - rem(36));
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: rem(242);
+	}
+}
+
+.sitemap-body-nav__left-items,
+.sitemap-body-nav__right-items {
+	margin-top: rem(16);
+}
+
+.sitemap-body-nav__left-item a,
+.sitemap-body-nav__right-item a {
+	display: block;
+	padding: rem(12) 0 rem(12) rem(22);
+	cursor: pointer;
+	line-height: calc(18 / 16);
+	font-weight: $regular;
+}
+
+.sitemap-body-nav__left-item a:hover,
+.sitemap-body-nav__right-item a:hover {
+	opacity: .6;
+}
+
+.sitemap-body-nav__left-item:first-child a,
+.sitemap-body-nav__right-item:first-child a {
+	font-weight: $bold;
+	position: relative;
+}
+
+.sitemap-body-nav__left-item:first-child a::before,
+.sitemap-body-nav__right-item:first-child a::before {
+	display: inline-block;
+	content: "";
+	width: rem(18);
+	height: rem(18);
+	background: url(../images/common/hitode-green.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: rem(12);
+	left: rem(2);
+}

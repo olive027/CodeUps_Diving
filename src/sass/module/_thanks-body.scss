@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.thanks-body.fish-icon::before {
+	top: rem(-24);
+	@include mq(md){
+		left: calc(50% - min(49vw, 38.2625rem));
+    top: rem(-68);
+	}
+}
+
+.thanks-body__head,
+.thanks-body__text {
+	font-size: rem(16);
+	font-weight: $normal;
+	text-align: center;
+}
+
+.thanks-body__text {
+	margin-top: rem(40);
+}

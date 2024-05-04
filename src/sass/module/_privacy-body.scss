@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.privacy-body.fish-icon::before {
+	top: rem(-24);
+	@include mq(md){
+		left: calc(50% - min(49vw, 38.7625rem));
+    top: rem(-68);
+	}
+}
+
+.privacy-body__wrap {
+	max-width: rem(800);
+	margin-inline: auto;
+}
+
+.privacy-body__title {
+	font-size: rem(24);
+	font-weight: $medium;
+	@include mq(md){
+		font-size: rem(32);
+	}
+}
+
+.privacy-body__item,
+.privacy-body__text {
+	margin-top: rem(40);
+}
+
+.privacy-body__text,
+.privacy-body__item-text {
+	font-size: rem(16);
+	font-weight: $normal;
+	line-height: calc(32 / 16);
+}
+
+.privacy-body__item-number {
+	list-style: decimal;
+	padding-left: 1em;
+}
