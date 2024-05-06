@@ -26,3 +26,12 @@
 	top: 35%;
 	left: rem(-12);
 }
+
+.breadcrumbs.breadcrumbs--white .breadcrumbs__item {
+	color: $white;
+}
+
+.breadcrumbs.breadcrumbs--white .breadcrumbs__item:nth-child(n+2)::before {
+	background: url(../images/common/breadcrumbs-arrow-white.png) no-repeat;
+	background-size: contain;
+}

@@ -17,6 +17,12 @@
 	z-index: 1;
 }
 
+.button.button--green {
+	background-color: $white;
+	border: 1px solid $white;
+	color: $green1;
+}
+
 .button::first-letter {
 	text-transform: capitalize;
 }
@@ -35,6 +41,10 @@
   z-index: -1;
 }
 
+.button.button--green::after {
+	background: $green1;
+}
+
 .button span::after {
 	content: "";
 	width: rem(40);
@@ -46,6 +56,11 @@
 	transform: translateY(-50%);
 	right: rem(36);
 	transition: background-image .3s;
+}
+
+.button.button--green span::after {
+	background: url(../images/common/button-arrow-green.png) no-repeat;
+	background-size: contain;
 }
 
 .button::before {
@@ -61,9 +76,19 @@
 	z-index: -2;
 }
 
+.button.button--green::before {
+	background-color: transparent;
+	border: 1px solid $white;
+}
+
 .button:hover {
 	background-color: $white;
 	color: $green1;
+}
+
+.button.button--green:hover {
+	background-color: $green1;
+	color: $white;
 }
 
 .button:hover::after {
@@ -72,4 +97,8 @@
 
 .button:hover span::after {
 	background-image: url(../images/common/button-arrow-green.png);
+}
+
+.button.button--green:hover span::after {
+	background-image: url(../images/common/button-arrow-white.png);
 }
