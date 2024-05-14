@@ -8,9 +8,8 @@
 	content: "";
 	width: rem(120);
 	height: rem(55);
-	background: url(../images/common/fish01.png) no-repeat;
+	background: url(../images/common/fish-campaign.png) no-repeat;
 	background-size: contain;
-	transform: scaleX(-1);
 	position: absolute;
 	top: rem(-150);
 	left: calc(50% - min(49vw, rem(172.5)));
@@ -18,7 +17,7 @@
 	@include mq(md){
 		width: rem(300);
 		height: rem(138);
-		top: rem(-142);
-		left: calc(50% - min(49vw, rem(625)));
+		top: rem(-144);
+		left: calc(50% - min(49vw, rem(619)));
 	}
 }

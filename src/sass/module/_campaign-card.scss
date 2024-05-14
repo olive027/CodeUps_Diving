@@ -39,6 +39,12 @@
 	padding: rem(16) rem(23) rem(24);
 }
 
+.campaign-card.campaign-card--page .campaign-card__body {
+	@include mq(md){
+		padding: rem(23) rem(24) rem(40);
+	}
+}
+
 .campaign-card__category {
 	display: inline-block;
 	padding: rem(4) rem(11);
@@ -49,6 +55,12 @@
 	border: 1px solid $green1;
 	@include mq(md){
 		padding: rem(6) rem(14.8);
+	}
+}
+
+.campaign-card.campaign-card--page .campaign-card__category {
+	@include mq(md){
+		padding: rem(5) rem(14.8);
 	}
 }
 
@@ -84,6 +96,11 @@
 .campaign-card.campaign-card--side .campaign-card__wrap {
 	margin-top: rem(8);
 	padding: rem(8) rem(18) 0;
+}
+
+.campaign-card.campaign-card--page .campaign-card__wrap {
+	margin-top: rem(4);
+	padding: rem(23) rem(18) 0;
 }
 
 .campaign-card__text {
