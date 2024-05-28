@@ -31,10 +31,13 @@
 
 .common-mv__title-wrap {
 	position: absolute;
-	top: 48%;
+	top: 43.4%;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
+	@include mq(md){
+		top: 48%;
+	}
 }
 
 .common-mv__title {

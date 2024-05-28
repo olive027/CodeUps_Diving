@@ -11,8 +11,8 @@
 	background: url(../images/common/fish-campaign.png) no-repeat;
 	background-size: contain;
 	position: absolute;
-	top: rem(-150);
-	left: calc(50% - min(49vw, rem(172.5)));
+	top: rem(-148);
+	left: calc(50% - min(49vw, rem(173.5)));
 	z-index: -1;
 	@include mq(md){
 		width: rem(300);
